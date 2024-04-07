@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/longform.css" rel="stylesheet" type="text/css">
+
+    {{ partial "title.html" (dict "burl" .Site.BaseURL "mtitle" "Deliberation recursion")}}
+</head>
+<body>
+    {{ partial "go_home.html" . }}
+
+    <div class="blog-list">
+        {{ range .Data.Pages.GroupByDate "2006" }}
+        <div class="blog-year">{{ .Key }}</div>
+        {{ range .Pages }}
+        <div class="in-year">
+                <div class="blog-item">
+                    <div class="blog-item-header">
+                        <a href="{{.Permalink}}" class="blog-title"> {{ .Title }} </a>
+                        <span class="blog-item-date"> {{ .Date.Format "1 Jan 2006"}} </span>
+                    </div>
+                    <div class="blog-item-tags-line">
+                        {{ if .Params.tags }}
+                            <img src="{{ "images/tag.png" | relURL}}" width="auto" height="20px" style="margin-top: 3px;">
+                            {{ range .Params.tags }}
+                                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" style="margin-left: 10px;">#{{ . }}</a> 
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="blog-item-summary">
+                        {{ .Params.sum }}
+                    </div>
+                </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+    <div class="jump-to-top">
+        <a href="#">| Jump to top! ↑ |</a>
+    </div>
+</body>
+</html>

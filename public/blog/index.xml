@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Insanity</title>
+    <link>http://phoster.zone/blog/</link>
+    <description>Recent content in Blogs on Insanity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Oct 2023 00:03:17 +0200</lastBuildDate><atom:link href="http://phoster.zone/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Truth, Empathy and Harmful Acceptance</title>
+      <link>http://phoster.zone/blog/harmful-acceptance/</link>
+      <pubDate>Sun, 08 Oct 2023 00:03:17 +0200</pubDate>
+      
+      <guid>http://phoster.zone/blog/harmful-acceptance/</guid>
+      <description>Truth, Empathy and Harmful Acceptance Should we shame fat people? Do we need to accept other cultures?
+The bad argument for gay acceptance.
+I live in a medium-sized city. My observations may be biased by this fact.
+Here is an interesting phenomenon: people change the expression of their opinions, and even their opinions themselves, according to what the societal norm is. Although that is not the subject of this post, it is good to keep in mind.</description>
+    </item>
+    
+    <item>
+      <title>The first post</title>
+      <link>http://phoster.zone/blog/first/</link>
+      <pubDate>Mon, 11 Sep 2023 02:24:40 +0200</pubDate>
+      
+      <guid>http://phoster.zone/blog/first/</guid>
+      <description>Hello World The first breath of this webbed site.</description>
+    </item>
+    
+  </channel>
+</rss>

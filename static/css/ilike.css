@@ -1,0 +1,23 @@
+body {
+    flex-direction: column;
+    background-color: #49192d;
+    /* color: #bcff93; */
+    color: #dbff93;
+}
+
+.likemain {
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+}
+.likemain a {
+    text-decoration: none;
+}
+
+.likeheader {
+    width: 100%;
+}
+
+b, strong {
+    color: #8a99ff;
+}

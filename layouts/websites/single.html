@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/ilike.css" rel="stylesheet" type="text/css">
+
+    {{ partial "title.html" (dict "burl" .Site.BaseURL "mtitle" "Here, take this!")}}
+
+    <style>
+    .thecont {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .likemain {
+        width: 90%;
+    }
+
+    .likesec {
+        width: 50%;
+        border: 6px solid #d8c5cd;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    a:hover {
+        color: #57ff73;
+    }
+    </style>
+</head>
+<body>
+    <div class="likeheader">
+        <a href="/ilike" style="text-decoration: none; color: #c2c2c2;"> 
+            <div style="text-align:center">
+                <pre><~~    <~~    <~~    <~~    <~~    <~~    <~~    <~~    <~~</pre>
+            </div>
+        </a>
+    </div>
+    <div class="likemain">
+        <h1 style="color: #ffffff; text-align: center;"> Here are some websites I like </h1>
+        <!-- {{ .Content }} -->
+
+        <div class="thecont">
+            {{ $headless := .Site.GetPage "/liked_websites" }}
+            {{ $lwpages := $headless.Resources}}
+            {{ range $lwpages }}
+            <div class="likesec">
+                {{ .Content }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</body>
+</html>

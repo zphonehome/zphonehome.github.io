@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/longform-single.css" rel="stylesheet" type="text/css">
+
+    {{ partial "title.html" (dict "burl" .Site.BaseURL "mtitle" "Humble corner :3")}}
+</head>
+<body>
+    <div class="header">
+        <div class="header-el bot-align-pls"><a href="../" style="color:rgb(252, 210, 156);"><span>Other writings :3</span></a></div>
+        <div id="np-nav" class="header-el">
+            {{ if .NextInSection }}
+            <a href="{{ .NextInSection.Permalink }}" class="bot-align-pls arw"> <img src="/images/left_arrow.png" width="auto" height="30px;"> </a>
+            {{ end }}
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.Permalink }}" class="bot-align-pls arw"> <img src="/images/right_arrow.png" width="auto" height="30px;"> </a>
+            {{ end }}
+        </div>
+        <div class="header-el bot-align-pls"><a href="/" style="color: #a9a9b3;"><span>Back to the entrance.</span></a></div>
+    </div>
+    <hr style="width: 100%;">
+    <div id="mainsec">
+        <div id="bheader">
+            <div id="bdate"> 
+                {{ .Date.Format "1 Jan 2006"}}
+                {{ if .Params.tags }}
+                    <img src="{{ "images/tag.png" | relURL}}" width="auto" height="20px" style="vertical-align: bottom;">{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" style="margin-left: 10px;">#{{ . }}</a> {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{ .Content }}
+    <div>
+</body>
+</html>

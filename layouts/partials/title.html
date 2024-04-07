@@ -1,0 +1,3 @@
+{{ $bs := urls.Parse .burl }}
+{{ $title := print .mtitle " | " $bs.Host}}
+<title>{{ $title }}</title>

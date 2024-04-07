@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+    {{ partial "title.html" (dict "burl" .Site.BaseURL "mtitle" "Me.")}}
+    
+    <style>
+        body {
+            flex-direction: column;
+        }
+
+        #about-contain {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            justify-content: center;
+            margin-top: 2em;
+        }
+
+        #about {
+            border: 3px solid #ccc;;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: 20px;
+            /*color: #00ff7f;
+            color: #00d76b;
+            color: #00bbff;
+            */
+            color: #c4eefc;
+            background-color: #130e0f;
+        }
+
+        #about-sidebar{
+            border: 3px solid #ccc;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: 20px;
+        }
+        #about-sidebar img{
+            width: 88px; height: 31px;
+        }
+
+        #about-main{
+            display: flex;
+            flex-direction: row;
+        }
+
+        #webbed-sites{
+            border: 3px solid #fd40cb;;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+        }
+        #webbed-sites img {
+            width: 240px; height: 60px;
+        }
+        #webbed-sites a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    {{ partial "about_nav.html" . }}
+    <div id="about-contain">
+        <div id="about-main">
+            <div id="about">
+                {{ .Content }}
+            </div>
+            <div id="about-sidebar">
+                <img src="../buttons/88/animegay.gif">
+                <img src="../buttons/88/anonymize.gif">
+                <img src="../buttons/88/anybrowser.gif">
+                <img src="../buttons/88/bluepantsu.gif">
+                <img src="../buttons/88/crushit.gif">
+                <img src="../buttons/88/emulate.gif">
+                <img src="../buttons/88/neocities-now.gif">
+                <img src="../buttons/88/piracy.gif">
+                <img src="../buttons/88/saynotoweb3.gif">
+                <img src="../buttons/88/lain.gif">
+                <a href="https://www.1a-insec.net/"><img src="../buttons/88/1A.png"></a>
+                <hr>
+                Send me cool buttons!
+            </div>
+        </div>
+        <div id="webbed-sites">
+            <a href="http://sleepy.zone/"> <img src="../buttons/sites/sleepy_radio.png"> </a>
+            <a href="https://justaweirdvivi.neocities.org/"> <img src="../buttons/sites/vivian.png"> </a>
+            <a href="https://sadgirlsclub.wtf/"> <img src="../buttons/sites/sgc.png"> </a>
+            <a href="https://rainisnot.neocities.org/"><img src="../buttons/sites/rainbanner.png"></a>
+            <a href="https://猫.移动/"> <img src="../buttons/sites/xn-neko.gif"></a>
+            <a href="https://www.lainchan.org/"> <img src="../buttons/sites/lainchan-button.png"></a>
+            <a href="https://lain.la/"> <img src="../buttons/sites/lainla.png"></a>
+            <a href="https://sizeof.cat"> <img src="../buttons/sites/sizeofcat.gif"></a>
+            <a href="https://www.thunix.net/~memo/"> <img src="../buttons/sites/serimemo.png"></a>
+            <a href="https://articexploit.xyz/"> <img src="../buttons/sites/The_Arcade.gif"></a>
+            <a href="https://robophobia.org"> <img src="../buttons/sites/robophobia_button.gif"></a>
+            <a href="https://theabsoluterealm.com"> <img src="../buttons/sites/arbutton.gif"></a>
+            <a href="https://eniuu.debil.club/"> <img src="../buttons/sites/eniuubutton.png"></a>
+            <a href="https://sfr.gay/"><img src="../buttons/sites/ralsei.gif"></a>
+            <hr>
+            Send me cool sites!
+        </div>
+    </div>
+</body>
+</html>
+
+

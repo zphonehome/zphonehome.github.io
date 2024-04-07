@@ -1,0 +1,6 @@
+baseURL = 'http://phoster.zone/'
+languageCode = 'en-us'
+title = 'Insanity'
+
+[taxonomies]
+    tag = "tags"

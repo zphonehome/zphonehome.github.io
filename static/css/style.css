@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #4e4e57; */
+    background-color: #232425;
+    /* color: #a9a9b3; */
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    display: flex;
+} 
+
+a {
+    /* color: #a9a9b3 */
+    color: #7bd1ee;
+}
+
+/* Bash Terminal Colors & font */
+.term-g-color {
+    color: #38df00
+}
+.term-bright-g-color {
+    color: #41FF00
+}
+.term-home-color {
+    color: #8fa2dd
+}
+.term-font {
+    font-family: "Terminus";
+}
+@font-face {
+    font-family: 'Terminus';
+    src: URL('../fonts/terminus-ttf/TerminusTTF-4.49.3.ttf') format('truetype');
+}
+/* end */
+
+.jump-to-top {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.jump-to-top a {
+    color: rgb(45, 255, 178); 
+    text-decoration: none;
+}
+
+.jump-to-top a:hover {
+    background-color: #c2255c;
+    color: rgb(255, 255, 255);
+}
+
+b, strong {
+    color: #00d76b;
+}
+
+i, em {
+    color: #db65ff;
+}

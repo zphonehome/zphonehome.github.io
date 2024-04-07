@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+    {{ partial "title.html" (dict "burl" .Site.BaseURL "mtitle" "Where am I?")}}
+    
+    <style>
+        .mmi {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    {{ partial "about_nav.html" . }}
+
+    {{ .Content }}
+</body>
+</html>
+
+
