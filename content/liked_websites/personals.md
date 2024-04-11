@@ -36,3 +36,6 @@ title = 'Personals'
 + [Alterhuman Summoning Circle](https://feelingmachine.moe/alterring/members)
 + [Self-Insert](https://webring.koinuko.pink/members.php)
 + [Animalia](https://lavender.chrysocyon.xyz/webring.html)
++ [250KB club](https://250kb.club/)
++ [512KB club](https://512kb.club/)
++ [1MB club](https://1mb.club/)

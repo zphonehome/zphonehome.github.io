@@ -6,15 +6,14 @@
     <description>Recent content in Writings on Insanity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Sep 2023 12:31:06 +0200</lastBuildDate><atom:link href="http://phoster.zone/writing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Sep 2023 12:31:06 +0200</lastBuildDate>
+    <atom:link href="http://phoster.zone/writing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
       <link>http://phoster.zone/writing/first/</link>
       <pubDate>Wed, 06 Sep 2023 12:31:06 +0200</pubDate>
-      
       <guid>http://phoster.zone/writing/first/</guid>
       <description>Every story starts with a bang.</description>
     </item>
-    
   </channel>
 </rss>
