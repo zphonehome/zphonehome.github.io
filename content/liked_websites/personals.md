@@ -6,7 +6,7 @@ title = 'Personals'
 *Sites that do not have a button/banner are listed here instead of [/about]({{<sitelink about>}}).*   
 \
 \
-[wired-7.org](https://wired-7.org/), [navi.solutions](https://navi.solutions/), [ToastyTech](http://toastytech.com/), [bulltown.2022](https://bulltown.2022.joejenett.com/#buttons)
+[wired-7.org](https://wired-7.org/), [navi.solutions](https://navi.solutions/), [ToastyTech](http://toastytech.com/), [bulltown.2022](https://bulltown.2022.joejenett.com/#buttons), [fauux.neocities.org](https://fauux.neocities.org/)
 
 # Index of Webrings I found
 *i love surfing these* (definition of webring may be loose)
